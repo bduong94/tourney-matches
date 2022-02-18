@@ -7,6 +7,7 @@ const MatchList = (props) => {
       players={match.players}
       winner={match.winner}
       scoreDifference={match.scoreDifference}
+      key={match.matchNumber}
     />
   ));
 
