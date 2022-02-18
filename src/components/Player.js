@@ -16,11 +16,6 @@ const Player = (props) => {
       ) : (
         <h2 className="zero">Currently with no wins :(</h2>
       )}
-      {/* To be shown when there is no wins */}
-
-      {/* To be shown when there is 1 win */}
-
-      {/* To be shown when there is more than one win */}
     </article>
   );
 };

@@ -1,20 +1,8 @@
 import React from "react";
 import Player from "./Player";
-import playerData from "../data/playerData";
-import matchData from "../data/matchData";
-import { preparePlayerData, addWinsToPlayers } from "../helpers/playerHelpers";
 
 const PlayerList = (props) => {
-  const playerDataArray = preparePlayerData(playerData);
-  const updatedPlayerDataArray = addWinsToPlayers(playerDataArray, matchData);
-  const onePlayer = updatedPlayerDataArray[0];
-  /* 
-  "Disguised Lizard": {
-    gamerTag: "Disguised Lizard",
-    firstName: "Daria ",
-    lastName: "Stark",
-    currentWins
-  },*/
+  const onePlayer = props.playerData[0];
 
   return (
     <section className="PlayerList">
